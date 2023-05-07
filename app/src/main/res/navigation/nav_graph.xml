@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splash_fragment">
+
+    <fragment
+        android:id="@+id/splash_fragment"
+        android:name="com.bbox.myjournal.view.fragments.SplashFragment"
+        android:label="Splash"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/nav_graph"
+        app:popUpToInclusive="true"
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/to_main_fragment"
+            app:destination="@id/main_fragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/splash_fragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.bbox.myjournal.view.fragments.MainFragment"
+        android:label="Main Fragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/main_fragment"
+        tools:layout="@layout/fragment_main">
+
+
+        <action
+            android:id="@+id/to_add_feeling_fragment"
+            app:destination="@id/add_feeling_fragment"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/to_see_feeling_fragment"
+            app:destination="@id/see_feeling_fragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/see_feeling_fragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/add_feeling_fragment"
+        android:name="com.bbox.myjournal.view.fragments.AddNewFeelingFragment"
+        android:label="Add New Feeling"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/main_fragment"
+        tools:layout="@layout/fragment_add_feeling">
+
+
+        <action
+            android:id="@+id/to_main_fragment"
+            app:destination="@id/main_fragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/main_fragment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/see_feeling_fragment"
+        android:name="com.bbox.myjournal.view.fragments.SeeAllFeelingFragment"
+        android:label="See All Feeling"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/main_fragment"
+        app:popUpToInclusive="true"
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/to_main_fragment"
+            app:destination="@id/main_fragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/main_fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

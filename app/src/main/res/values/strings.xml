@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">My Journal</string>
+
+
+    <string name="label_add_feeling">Add New Feeling</string>
+    <string name="label_see_feeling">See All Feeling</string>
+    <string name="label_about_feeling">How do you feel right now?</string>
+    <string name="label_date_time">Select Date And Time</string>
+    <string name="label_write_feeling">Write your feeling here.....</string>
+    <string name="label_feeling">Feeling : </string>
+
+
+    <string name="msg_grant_permissions">Please grant permissions in order to use the app.</string>
+    <string name="label_alert">Alert</string>
+    <string name="label_ok">ok</string>
+    <string name="label_submit">submit</string>
+
+
+    <string name="label_choose_color">Please choose the feeling color by click on color.</string>
+    <string name="label_select_date">Please select the date and time by click on select data and time button.</string>
+    <string name="label_feeling_detail">Please write the feeling detail.</string>
+    <string name="label_added">Successfully added your feeling.</string>
+    <string name="label_no_data">No feeling data found.</string>
+
+
+    <string name="label_color_hint">Your Feeling Color is :</string>
+    <string name="label_date_hint">Your Selected Date &amp; Time is :</string>
+    <string name="label_green">Your Feeling Color is : Green</string>
+    <string name="label_red">Your Feeling Color is : RED</string>
+    <string name="label_yellow">Your Feeling Color is : Yellow</string>
+
+</resources>
